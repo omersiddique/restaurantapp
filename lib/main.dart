@@ -38,8 +38,10 @@ class MyApp extends StatelessWidget {
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: CategoriesScreen(),
+      // initialRoute: '/', 
       routes:{
-        '/categories': (context) => CategoryMealsScreen()
+        // '/' -> refers to Home
+       CategoryMealsScreen.routeName: (context) => CategoryMealsScreen()
       }
     );
   }
